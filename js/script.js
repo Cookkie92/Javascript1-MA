@@ -12,3 +12,4 @@ const cats = [
     }
 ];
 
+var hello = "hello"
