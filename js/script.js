@@ -31,7 +31,7 @@ const heading = document.querySelector("h3");
 
 heading.innerHTML = "Updated Heading";
 
-console.log(heading)
+// console.log(heading)
 
 //Question 3
 
@@ -61,9 +61,13 @@ resultsContainer.innerHTML = `
 `;
 resultsContainer.style.background = "yellow";
 
+// console.log(resultsContainer);
+
 //Question 7
 
-
+function list (){
+    
+}
 
 
 
