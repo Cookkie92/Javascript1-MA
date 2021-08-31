@@ -29,4 +29,42 @@ cat.complain();
 
 const heading = document.querySelector("h3");
 
-heading.InnerHTML = "updated heading";
+heading.innerHTML = "Updated Heading";
+
+console.log(heading)
+
+//Question 3
+
+heading.style.fontSize = "2em";
+
+//Question 4
+
+heading.className = "subheading";
+
+//Question 5
+
+const paragraphs = document.querySelectorAll("p");
+
+for(let i = 0; i < paragraphs.length; i++){
+    //console.dir(paragraphs[i].innerHTML);
+
+    paragraphs[i].style.color = "red";
+}
+
+
+//Question 6
+
+const resultsContainer = document.querySelector(".results");
+
+resultsContainer.innerHTML = `
+    <p>New paragraph</p>
+`;
+resultsContainer.style.background = "yellow";
+
+//Question 7
+
+
+
+
+
+
