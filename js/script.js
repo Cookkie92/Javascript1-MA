@@ -12,9 +12,9 @@ const cats = [
     }
 ];
 
-var hello = "hello"
+// var hello = "hello"
 
-//Question 1
+// //Question 1
 
 const cat = {
     complain: function() {
@@ -25,7 +25,7 @@ const cat = {
 }
 cat.complain();
 
-//Question 2
+// //Question 2
 
 const heading = document.querySelector("h3");
 
@@ -52,7 +52,7 @@ for(let i = 0; i < paragraphs.length; i++){
 }
 
 
-//Question 6
+// //Question 6
 
 const resultsContainer = document.querySelector(".results");
 
@@ -61,9 +61,9 @@ resultsContainer.innerHTML = `
 `;
 resultsContainer.style.background = "yellow";
 
-// console.log(resultsContainer);
+//console.log(resultsContainer);
 
-//Question 7
+// //Question 7
 
 function list (){
     
