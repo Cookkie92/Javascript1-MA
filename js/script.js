@@ -65,10 +65,20 @@ resultsContainer.style.background = "yellow";
 
 // //Question 7
 
-function list (){
-    
+function findCats (list){
+    for(let i = 0; i < list.length; i++){
+        console.log(list[i].name);
+    }
 }
 
+findCats(cats);
 
+//Question 8
+
+function createCats(cats){
+    for(let i = 0; i < cats.length; i++){
+        
+    }
+}
 
 
