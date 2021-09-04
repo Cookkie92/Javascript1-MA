@@ -67,7 +67,7 @@ resultsContainer.style.background = "yellow";
 
 function findCats (list){
     for(let i = 0; i < list.length; i++){
-        console.log(list[i].name);
+        // console.log(list[i].name);
     }
 }
 
@@ -75,10 +75,56 @@ findCats(cats);
 
 //Question 8
 
-function createCats(cats){
+const container = document.querySelector(".cat-container");
+
+console.log();
+
+let html = "";
+
+function createCats(){
     for(let i = 0; i < cats.length; i++){
+        // console.log(cats[i].age);
+        if(cats[i].age === undefined){
+            // html+=  `<p>${cats[i].age} Age unknown </p>`; NEIIIIII
+            
+        }
+        html += `<div>
+                    <h5>${cats[i].name}</h5>
+                    <p>Age:${cats[i].age}</p>
         
+                </div>
+        `;
     }
+    container.innerHTML = html;
+    console.log(html);
 }
+
+
+
+createCats();
+
+
+
+
+
+
+// function createCats(){
+//     let html =""
+//     for(let i = 0; i < cats.length; i++){
+//         let ageNot = "Uknown age";
+//         if (cats[i].age) {
+//             catsNot = cats[i].age;
+
+//         }
+//         html += `<div>
+//             <h5>${cats[i].name}</h5>
+//             <p>Age: ${cats[i].age}</p>
+//         </div>
+//         `;
+//     }
+//     return html;
+// }
+// createCats();
+
 
 
