@@ -76,9 +76,35 @@ findCats(cats);
 //Question 8
 
 
+function createCats(cats){
+    
+    let kittens = "";
 
+    for(let i = 0; i < cats.length; i++){
 
+        let age = "Age unknown";
 
+        if(cats[i].age){
+            age = cats[i].age;
+        }
+
+        kittens +=`<div>
+                    <h5>${cats[i].name}</h5>
+                    <p>${age}</p>
+                </div>
+    `;
+    }
+    const finalHtml =  kittens
+
+    return finalHtml;
+}
+const newHtml = createCats(cats);
+
+console.log(newHtml);
+
+const container = document.querySelector(".cat-container");
+
+container.innerHTML = newHtml;
 
 // this is wrong, rewrite code tomorrow
 
@@ -135,4 +161,5 @@ findCats(cats);
 // createCats();
 
 
-
+ // kittens = kittens + "<h5>" + cats[i].name + cats[i].age +  "</h5>";
+        // console.log(kittens);
